@@ -4,3 +4,5 @@ langchain-text-splitters>=1,<2
 langchain-openai>=1,<2
 langchain-chroma>=1,<2
 python-dotenv>=1,<2
+fastapi
+uvicorn[standard]

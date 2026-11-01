@@ -149,7 +149,17 @@ class KnowledgeAssistant:
             }
         )
 
-        cited_labels = set(re.findall(r"\[(S\d+)\]", answer))
+                # Recognise individual citations [S1] and grouped citations [S1, S2].
+        citation_groups = re.findall(
+            r"\[(S\d+(?:\s*,\s*S\d+)*)\]",
+            answer,
+        )
+
+        cited_labels = {
+            label
+            for group in citation_groups
+            for label in re.findall(r"S\d+", group)
+        }
 
         # Check that every source label refers to retrieved evidence.
         unknown_labels = cited_labels - available_sources.keys()
