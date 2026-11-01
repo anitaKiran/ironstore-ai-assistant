@@ -276,13 +276,15 @@ reference validity, not whether every generated claim is correct.
 
 ## Deployment
 
-Deployment to Vercel is the next step.
+The application is deployed on Vercel:
 
-The deployed app will use Pinecone for document retrieval and OpenAI
-for question embeddings and answer generation. API credentials must
-be configured as server-side environment variables in Vercel.
+**[Open the live assistant](https://ironstore-ai-assistant-ak.vercel.app/)**
 
-The deployment URL will be added after verification.
+The frontend and FastAPI backend run together on Vercel.
+Pinecone stores the searchable document index, and OpenAI
+provides question embeddings and answer generation.
+
+API credentials are configured as server-side environment variables.
 
 ## Future Improvements
 
