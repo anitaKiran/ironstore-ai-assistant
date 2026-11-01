@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IronStore AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/">
+      <span class="brand-icon">I</span>
+      <span>IronStore <strong>AI</strong></span>
+    </a>
+
+    <p class="sidebar-caption">YOUR COMPANY KNOWLEDGE, CONNECTED</p>
+
+    <button id="new-chat" class="new-chat" type="button">
+      + New conversation
+    </button>
+
+    <div class="sidebar-section">
+      <span class="section-label">KNOWLEDGE AREAS</span>
+      <p>People & HR</p>
+      <p>IT & Security</p>
+      <p>Finance & Sales</p>
+      <p>Customer Support</p>
+      <p>Legal & Deliveries</p>
+      <p>Product Catalogs</p>
+    </div>
+
+    <div class="sidebar-footer">
+      <strong>Answers with evidence</strong>
+      <p>Explore the source passages behind each answer.</p>
+    </div>
+  </aside>
+
+  <main class="workspace">
+    <header class="topbar">
+      <div>
+        <h1>Company Knowledge Assistant</h1>
+        <p>Find answers across your internal documents</p>
+      </div>
+      <span class="workspace-tag">INTERNAL KNOWLEDGE</span>
+    </header>
+
+    <section id="conversation" class="conversation">
+      <div id="welcome" class="welcome">
+        <span class="eyebrow">LESS SEARCHING. MORE CLARITY.</span>
+        <h2>What would you like to know?</h2>
+        <p>
+          Ask about company policies, everyday procedures,
+          or product information. Start with a question below.
+        </p>
+
+        <div class="suggestions">
+          <button type="button"
+            data-question="How do employees request annual leave?">
+            <span class="card-category">PEOPLE & HR</span>
+            <strong>Plan your time off</strong>
+            <span>How do I request annual leave? ↗</span>
+          </button>
+
+          <button type="button"
+            data-question="What should I do if my company laptop is stolen?">
+            <span class="card-category">IT & SECURITY</span>
+            <strong>Know your next step</strong>
+            <span>What if my company laptop is stolen? ↗</span>
+          </button>
+
+          <button type="button"
+            data-question="Turn the expense reimbursement procedure into a checklist.">
+            <span class="card-category">FINANCE</span>
+            <strong>Make procedures simpler</strong>
+            <span>Give me an expense claim checklist ↗</span>
+          </button>
+
+          <button type="button"
+            data-question="What information is available in the electronics product catalog?">
+            <span class="card-category">PRODUCTS</span>
+            <strong>Explore the catalog</strong>
+            <span>What electronics information can I find? ↗</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="messages" class="messages"
+        role="log" aria-label="Conversation" aria-live="polite"></div>
+    </section>
+
+    <div class="composer-area">
+      <p id="status" class="status" role="status"></p>
+
+      <form id="chat-form" class="composer">
+        <label for="question" class="sr-only">Your question</label>
+        <textarea
+          id="question"
+          placeholder="Ask a question about IronStore..."
+          rows="2"
+          maxlength="4000"
+          required
+        ></textarea>
+        <button id="send" type="submit">Send ↗</button>
+      </form>
+
+      <p class="composer-note">
+        Check cited sources for important decisions.
+        Catalog stock and prices reflect document snapshots.
+      </p>
+    </div>
+  </main>
+</body>
+</html>

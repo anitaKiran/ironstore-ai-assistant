@@ -1,0 +1,10 @@
+pypdf>=6,<7
+langchain-core>=1,<2
+langchain-text-splitters>=1,<2
+langchain-openai>=1,<2
+langchain-chroma>=1,<2
+python-dotenv>=1,<2
+fastapi
+uvicorn[standard]
+pinecone>=7,<10
+langchain-pinecone

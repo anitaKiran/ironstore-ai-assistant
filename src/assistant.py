@@ -6,7 +6,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
 
-from src.indexing import get_vector_store
+from src.cloud_index import get_vector_store, has_documents
 from src.prompts import ANSWER_SYSTEM_PROMPT, REWRITE_SYSTEM_PROMPT
 
 
@@ -24,10 +24,11 @@ class KnowledgeAssistant:
 
         self.vector_store = get_vector_store()
 
-        if not self.vector_store.get(limit=1)["ids"]:
+        if not has_documents():
             raise ValueError(
-                "The document index is empty. Run python ingest.py first."
-            )
+                "The Pinecone namespace is empty. "
+                "Run python migrate_to_pinecone.py first."
+        )
 
         model = ChatOpenAI(
             model=model_name,
@@ -127,7 +128,7 @@ class KnowledgeAssistant:
                 "label": label,
                 "source": document.metadata["source"],
                 "filename": document.metadata["filename"],
-                "page": document.metadata["page"],
+                "page": int(document.metadata["page"]),
                 "department": document.metadata["department"],
                 "excerpt": document.page_content,
             }
