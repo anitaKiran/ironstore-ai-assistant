@@ -1,0 +1,95 @@
+ .env.example                                       |    1 [32m+[m
+ .gitignore                                         |   20 [32m+[m
+ chat.py                                            |    0
+ ...tore_Customer_Support_Escalation_Procedures.pdf |  194 [32m++++[m
+ ...Customer_Support_Knowledge_Base_Style_Guide.pdf |  194 [32m++++[m
+ ...nStore_Refund_and_Complaint_Handling_Policy.pdf |  200 [32m++++[m
+ ...ore_Returns_and_Reverse_Logistics_Procedure.pdf |  175 [32m+++[m
+ .../IronStore_Shipping_and_Delivery_SLA_Policy.pdf |  175 [32m+++[m
+ .../IronStore_Warehouse_Operations_Manual.pdf      |  194 [32m++++[m
+ .../Finance/IronStore_Budget_Approval_Workflow.pdf |  175 [32m+++[m
+ .../IronStore_Expense_Reimbursement_Policy.pdf     |  175 [32m+++[m
+ .../IronStore_Payroll_Processing_Procedures.pdf    |  175 [32m+++[m
+ .../HR_policies/IronStore_Employee_Handbook.pdf    |  194 [32m++++[m
+ .../IronStore_Leave_and_Absence_Policy.pdf         |  175 [32m+++[m
+ .../HR_policies/IronStore_Remote_Work_Policy.pdf   |  175 [32m+++[m
+ .../IT/IronStore_IT_Security_Policy.pdf            |  175 [32m+++[m
+ ...Store_Password_and_Access_Management_Policy.pdf |  181 [32m+++[m
+ .../IronStore_Contract_Approval_Workflow.pdf       |  194 [32m++++[m
+ ...ore_Data_Privacy_and_GDPR_Compliance_Policy.pdf |  175 [32m+++[m
+ .../IronStore_Terms_of_Service_Overview.pdf        |  175 [32m+++[m
+ .../IronStore_Discounts_and_Promotions_Policy.pdf  |  175 [32m+++[m
+ .../Sales/IronStore_Sales_Commission_Plan.pdf      |  181 [32m+++[m
+ .../Sales/IronStore_Sales_Playbook.pdf             |  194 [32m++++[m
+ .../IronStore_Old_Product_Catalog_2021.pdf         |  639 [32m+++++++++++[m
+ ...tore_Product_Catalog_Art_and_Craft_Supplies.pdf |  659 [32m+++++++++++[m
+ ...nStore_Product_Catalog_Audio_and_Headphones.pdf |  659 [32m+++++++++++[m
+ .../IronStore_Product_Catalog_Automotive.pdf       |  653 [32m+++++++++++[m
+ .../IronStore_Product_Catalog_Baby_and_Nursery.pdf |  716 [32m++++++++++++[m
+ .../IronStore_Product_Catalog_Bags_and_Luggage.pdf |  844 [32m++++++++++++++[m
+ ...nStore_Product_Catalog_Bathroom_Accessories.pdf | 1155 [32m++++++++++++++++++++[m
+ ...re_Product_Catalog_Beauty_and_Personal_Care.pdf |  697 [32m++++++++++++[m
+ ...ronStore_Product_Catalog_Bedding_and_Linens.pdf |  653 [32m+++++++++++[m
+ ...e_Product_Catalog_Bicycles_and_Cycling_Gear.pdf |  850 [32m++++++++++++++[m
+ ...nStore_Product_Catalog_Books_and_Stationery.pdf |  710 [32m++++++++++++[m
+ ...IronStore_Product_Catalog_Camping_Furniture.pdf |  735 [32m+++++++++++++[m
+ ..._Product_Catalog_Candles_and_Home_Fragrance.pdf |  983 [32m+++++++++++++++++[m
+ ...IronStore_Product_Catalog_Cleaning_Supplies.pdf |  481 [32m++++++++[m
+ ...nStore_Product_Catalog_Clothing_and_Apparel.pdf |  659 [32m+++++++++++[m
+ ...nStore_Product_Catalog_Computer_Accessories.pdf |  907 [32m+++++++++++++++[m
+ ...duct_Catalog_Curtains_and_Window_Treatments.pdf |  735 [32m+++++++++++++[m
+ ...tore_Product_Catalog_DIY_and_Hardware_Tools.pdf |  830 [32m++++++++++++++[m
+ ...tore_Product_Catalog_Drones_and_RC_Vehicles.pdf |  487 [32m+++++++++[m
+ .../IronStore_Product_Catalog_Electronics.pdf      |  607 [32m++++++++++[m
+ ...duct_Catalog_First_Aid_and_Medical_Supplies.pdf |  811 [32m++++++++++++++[m
+ ...IronStore_Product_Catalog_Fishing_Equipment.pdf |  639 [32m+++++++++++[m
+ ...ct_Catalog_Food_and_Beverage_Non-perishable.pdf |  754 [32m+++++++++++++[m
+ .../IronStore_Product_Catalog_Footwear.pdf         |  544 [32m+++++++++[m
+ .../IronStore_Product_Catalog_Furniture.pdf        |  678 [32m++++++++++++[m
+ ...ronStore_Product_Catalog_Gaming_Accessories.pdf |  659 [32m+++++++++++[m
+ .../IronStore_Product_Catalog_Garden_and_Patio.pdf |  786 [32m+++++++++++++[m
+ .../IronStore_Product_Catalog_Grilling_and_BBQ.pdf |  697 [32m++++++++++++[m
+ ..._Product_Catalog_Haircare_and_Styling_Tools.pdf |  773 [32m+++++++++++++[m
+ ...onStore_Product_Catalog_Health_and_Wellness.pdf |  703 [32m++++++++++++[m
+ .../IronStore_Product_Catalog_Home_Appliances.pdf  |  620 [32m+++++++++++[m
+ .../IronStore_Product_Catalog_Home_Essentials.pdf  |  659 [32m+++++++++++[m
+ ...ronStore_Product_Catalog_Home_Gym_Equipment.pdf |  773 [32m+++++++++++++[m
+ ...re_Product_Catalog_Home_Security_and_Safety.pdf |  653 [32m+++++++++++[m
+ ...oduct_Catalog_Home_Storage_and_Organization.pdf |  767 [32m+++++++++++++[m
+ .../IronStore_Product_Catalog_Hunting_Gear.pdf     |  639 [32m+++++++++++[m
+ ...onStore_Product_Catalog_Jewelry_and_Watches.pdf |  869 [32m+++++++++++++++[m
+ ...ronStore_Product_Catalog_Kitchen_and_Dining.pdf |  735 [32m+++++++++++++[m
+ ...oduct_Catalog_Laptop_and_Tablet_Accessories.pdf | 1054 [32m++++++++++++++++++[m
+ .../IronStore_Product_Catalog_Lighting.pdf         |  983 [32m+++++++++++++++++[m
+ .../IronStore_Product_Catalog_Mens_Grooming.pdf    |  983 [32m+++++++++++++++++[m
+ ...re_Product_Catalog_Mobile_Phone_Accessories.pdf |  697 [32m++++++++++++[m
+ ...onStore_Product_Catalog_Musical_Instruments.pdf |  792 [32m++++++++++++++[m
+ .../IronStore_Product_Catalog_Office_Supplies.pdf  |  672 [32m++++++++++++[m
+ ...onStore_Product_Catalog_Outdoor_and_Camping.pdf |  779 [32m+++++++++++++[m
+ ...duct_Catalog_Party_Supplies_and_Decorations.pdf |  678 [32m++++++++++++[m
+ .../IronStore_Product_Catalog_Pet_Products.pdf     |  735 [32m+++++++++++++[m
+ ...Store_Product_Catalog_Photography_Equipment.pdf |  792 [32m++++++++++++++[m
+ .../IronStore_Product_Catalog_Power_Tools.pdf      |  678 [32m++++++++++++[m
+ .../IronStore_Product_Catalog_Rugs_and_Carpets.pdf |  945 [32m++++++++++++++++[m
+ ..._Product_Catalog_Seasonal_and_Holiday_Decor.pdf |  468 [32m++++++++[m
+ .../IronStore_Product_Catalog_Skincare.pdf         |  729 [32m++++++++++++[m
+ ...ronStore_Product_Catalog_Smart_Home_Devices.pdf |  697 [32m++++++++++++[m
+ ...ronStore_Product_Catalog_Sports_and_Fitness.pdf |  773 [32m+++++++++++++[m
+ ...onStore_Product_Catalog_TV_and_Home_Theater.pdf |  588 [32m++++++++++[m
+ .../IronStore_Product_Catalog_Toys_and_Games.pdf   |  582 [32m++++++++++[m
+ ...ronStore_Product_Catalog_Travel_Accessories.pdf |  678 [32m++++++++++++[m
+ ...re_Product_Catalog_Vitamins_and_Supplements.pdf |  773 [32m+++++++++++++[m
+ ...ronStore_Product_Catalog_Wall_Art_and_Decor.pdf |  639 [32m+++++++++++[m
+ ...e_Product_Catalog_Water_Sports_and_Swimming.pdf |  697 [32m++++++++++++[m
+ .../IronStore_Product_Catalog_Wearable_Tech.pdf    |  678 [32m++++++++++++[m
+ ...ore_Product_Catalog_Winter_Sports_Equipment.pdf |  519 [32m+++++++++[m
+ ..._Product_Catalog_Yoga_and_Pilates_Equipment.pdf |  773 [32m+++++++++++++[m
+ ingest.py                                          |    0
+ requirements.txt                                   |    0
+ src/__init__.py                                    |    0
+ src/assistant.py                                   |    0
+ src/config.py                                      |    0
+ src/document_loader.py                             |    0
+ src/indexing.py                                    |    0
+ src/prompts.py                                     |    0
+ 94 files changed, 49472 insertions(+)
